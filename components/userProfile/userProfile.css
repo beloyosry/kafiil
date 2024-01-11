@@ -1,0 +1,173 @@
+#userProfile {
+    display: none;
+}
+
+.userProfile .profile-menu {
+    position: absolute;
+    width: 320px;
+    height: 0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+    padding: 17px 15px;
+    gap: 30px;
+    background-color: var(--base-white);
+    z-index: 9999999;
+    top: 0;
+    right: 123px;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.userProfile.opened .profile-menu {
+    position: absolute;
+    width: 320px;
+    height: 291px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+    padding: 17px 15px;
+    gap: 30px;
+    background-color: var(--base-white);
+    z-index: 9999999;
+    top: 80px;
+    right: 123px;
+    transition: all 0.5s ease;
+    opacity: 1;
+}
+
+.profile-menu .user {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 10px;
+
+}
+
+.profile-menu .user__info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 4px;
+    transition: all 0.3s ease;
+}
+
+.profile-menu ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 12px;
+}
+
+.profile-menu ul li {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 8px;
+    transition: all 0.3s ease;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.profile-menu ul li:hover {
+    background-color: var(--grey-200);
+}
+
+.profile-menu ul li i {
+    margin-right: 5px;
+}
+
+.profile-menu ul li p,
+.profile-menu ul li i {
+    color: var(--grey-500);
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0.87px;
+}
+
+.profile-menu ul .toggle {
+    position: relative;
+    width: 45px;
+    height: 23px;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    background-color: var(--grey-200);
+    margin-left: auto;
+}
+
+.profile-menu ul .toggle div {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--primary-900);
+    top: 2px;
+    left: 0%;
+    transition: all 0.5s ease-in-out;
+    animation: toggle-off 0.5s ease-in-out;
+}
+
+.profile-menu ul .toggle.dark-mode {
+    background-color: var(--primary-900);
+}
+
+.profile-menu ul .toggle.dark-mode div {
+    background-color: var(--base-white);
+    animation: toggle-on 0.5s ease-in-out;
+    left: 60%;
+}
+
+.profile-menu ul #language {
+    margin-left: auto;
+    color: var(--base-black);
+    font-size: 14px;
+    letter-spacing: -0.3px;
+    font-weight: 500;
+}
+
+.profile-menu ul .line {
+    height: 19px;
+    width: 1px;
+    background-color: var(--grey-400);
+}
+
+.profile-menu ul li.logout i,
+.profile-menu ul li.logout p {
+    color: var(--error-500);
+}
+
+/* Animations */
+@keyframes toggle-on {
+    0% {
+        left: 0%;
+    }
+    50% {
+        left: 60%;
+    }
+    100% {
+        left: 60%;
+    }
+}
+@keyframes toggle-off {
+    0% {
+        left: 60%;
+    }
+    50% {
+        left: 0%;
+    }
+    100% {
+        left: 0%;
+    }
+}

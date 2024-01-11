@@ -1,0 +1,5 @@
+/* main.css */
+
+@import "components/navbar/navbar.css";
+@import "components/userProfile/userProfile.css";
+@import "theme.css";

@@ -1,0 +1,59 @@
+/* components/theme.css */
+* {
+    /* colors */
+    --base-white: #ffffff;
+    --base-black: #000000;
+    --primary-900: #1dbf73;
+    --primary-100: #e9f9f1;
+    --grey-50: #f6f6f6;
+    --grey-100: #f2f2f2;
+    --grey-200: #e6eaef;
+    --grey-300: #c3c5c8;
+    --grey-400: #8692a6;
+    --grey-500: #696f79;
+    --grey-800: #333333;
+    --warning-300: #ffcb31;
+    --error-500: #ff5353;
+
+    --dark-bg: #1e1f1c;
+    /* social */
+    --twitter-blue: #1da1f2;
+    --whatsapp-green: #25d366;
+    --face-book-blue: #1877f2;
+    --linkedin-blue: #2867b2;
+}
+
+body.dark-mode {
+    background-color: var(--dark-bg);
+}
+
+body.dark-mode nav {
+    border-bottom: 1px solid var(--grey-800);
+    box-shadow: 0 5px 10px 0px var(--grey-800);
+}
+
+body.dark-mode .userProfile.opened .profile-menu {
+    box-shadow: 0 5px 15px 0 var(--grey-800);
+    background-color: var(--dark-bg);
+}
+
+body.dark-mode .profile-menu .user__info h3 {
+    color: var(--grey-400);
+}
+
+body.dark-mode .profile-menu .user__info p {
+    color: var(--grey-500);
+}
+
+body.dark-mode .profile-menu ul li:hover {
+    background-color: var(--grey-500);
+}
+
+body.dark-mode .profile-menu ul li:hover i,
+body.dark-mode .profile-menu ul li:hover P {
+    color: var(--dark-bg);
+}
+
+body.dark-mode .profile-menu ul #language {
+    color: var(--grey-300);
+}

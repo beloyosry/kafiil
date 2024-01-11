@@ -1,0 +1,89 @@
+/* components\navbar\navbar.css */
+
+@import "../../theme.css";
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-container ul.links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.navbar-container li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    gap: 8px;
+}
+
+.navbar-container li > i,
+.navbar-container li > a {
+    color: var(--grey-300);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.navbar-container li:hover a,
+.navbar-container li:hover i,
+.navbar-container a.active,
+.navbar-container i.active {
+    color: var(--primary-900);
+    font-weight: 600;
+}
+.navbar-container .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+.navbar-container .actions > div {
+    cursor: pointer;
+}
+
+.navbar-container .actions .actions__notification,
+.navbar-container .actions .actions__chat {
+    position: relative;
+}
+.navbar-container .actions .actions__notification img,
+.navbar-container .actions .actions__chat img {
+    width: 27px;
+    height: 27px;
+}
+.navbar-container .actions .actions__chat span,
+.navbar-container .actions .actions__notification span {
+    width: 19.2px;
+    height: 19.2px;
+    background-color: var(--primary-900);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 10px;
+    font-weight: 500;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    transform: translate(50%, -50%);
+    pointer-events: none;
+}
+.navbar-container .actions .actions__profile {
+    width: 43px;
+    height: 43px;
+    border: 2px solid var(--primary-900);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.navbar-container .actions .actions__profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
