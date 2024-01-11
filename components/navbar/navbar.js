@@ -37,6 +37,9 @@ $(function () {
     const navbar = $("#navbar");
     const userProfile = $("#userProfile");
     const profile = $("#profile");
+    const menu = $("#menu");
+    const sidebar = $(".sidebar");
+    const close = $(".close");
 
     // Add links
     const ul = navbar.find(".links");
@@ -48,18 +51,27 @@ $(function () {
         li.append(a);
         ul.append(li);
 
-        if (
-            link.url === "/" ||
-            (link.url === "index.html" && window.location.pathname === "/")
-        ) {
-            a.addClass("active");
-            i.addClass("active");
+        if (window.location.pathname === link.url) {
+            if (window.innerWidth > 900) {
+                console.log("Adding 'active' class to large screen:", link.url);
+                a.toggleClass("active");
+                i.toggleClass("active");
+            } else {
+                console.log("Adding 'active' class to:", link.url);
+                a.toggleClass("active");
+                i.toggleClass("active");
+            }
         }
     });
 
     // Toggle userProfile on profile click
     profile.click(function () {
         userProfile.slideToggle();
-        userProfile.toggleClass("opened")
+        userProfile.toggleClass("opened");
+    });
+
+    // Toggle sidebar
+    menu.click(function () {
+        sidebar.toggleClass("active");
     });
 });

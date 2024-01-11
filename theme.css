@@ -57,3 +57,7 @@ body.dark-mode .profile-menu ul li:hover P {
 body.dark-mode .profile-menu ul #language {
     color: var(--grey-300);
 }
+
+body.dark-mode .sidebar.active{
+    background-color: var(--dark-bg);
+}
