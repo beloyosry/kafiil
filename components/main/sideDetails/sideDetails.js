@@ -1,0 +1,1 @@
+// components\main\sideDetails\side-details.js

@@ -25,6 +25,7 @@ body {
     font-weight: 500;
     color: var(--grey-800);
     transition: all 0.5s ease;
+    background-color: #fdfdfd;
 }
 
 .container {
@@ -45,4 +46,9 @@ nav {
     border-radius: 10px;
     box-shadow: 0 5px 10px 0px var(--grey-300);
     transition: all 0.5s ease;
+}
+
+main {
+    width: 100%;
+    margin-top: 64px;
 }

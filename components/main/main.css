@@ -1,0 +1,17 @@
+/* components\main\main.css */
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.feed {
+    /* border: 1px solid black; */
+    width: 70%;
+}
+
+.side-details {
+    /* border: 1px solid black; */
+    width: 30%;
+}

@@ -1,0 +1,12 @@
+<!-- components\main\main.html -->
+<section class="content" id="content">
+    <div class="feed" id="feed"></div>
+    <div class="side-details" id="side-details"></div>
+</section>
+<section class="suggested" id="suggested"></section>
+
+<script>
+    $( "#feed" ).load( "components/main/feed/feed.html" );
+    $( "#side-details" ).load( "components/main/sideDetails/side-details.html" );
+    $( "#suggested" ).load( "components/main/suggested/suggested.html" );
+</script>

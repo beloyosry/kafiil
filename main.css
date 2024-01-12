@@ -2,4 +2,8 @@
 
 @import "components/navbar/navbar.css";
 @import "components/userProfile/userProfile.css";
+@import "components/main/main.css";
+@import "components/main/feed/feed.css";
+@import "components/main/sideDetails/side-details.css";
+@import "components/main/suggested/suggested.css";
 @import "theme.css";

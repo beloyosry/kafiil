@@ -1,0 +1,1 @@
+// components/main/suggested/suggested.js

@@ -52,15 +52,8 @@ $(function () {
         ul.append(li);
 
         if (window.location.pathname === link.url) {
-            if (window.innerWidth > 900) {
-                console.log("Adding 'active' class to large screen:", link.url);
-                a.toggleClass("active");
-                i.toggleClass("active");
-            } else {
-                console.log("Adding 'active' class to:", link.url);
-                a.toggleClass("active");
-                i.toggleClass("active");
-            }
+            a.addClass("active");
+            i.addClass("active");
         }
     });
 
