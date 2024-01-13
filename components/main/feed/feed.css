@@ -21,6 +21,13 @@ label {
     cursor: pointer;
 }
 
+.fa-star {
+    color: var(--warning-300);
+}
+.fa-star.empty {
+    color: var(--grey-200);
+}
+
 /* Start breadcrumb */
 .breadcrumb {
     margin-bottom: 24px;
@@ -71,13 +78,6 @@ label {
     align-items: center;
     justify-content: center;
     gap: 10px;
-}
-
-.feed__rating .rate i {
-    color: var(--warning-300);
-}
-.feed__rating .rate i.empty {
-    color: var(--grey-300);
 }
 
 .feed__rating p {
@@ -364,7 +364,8 @@ label {
     transition: all 0.5s ease;
 }
 
-.feed__purchase .purchase .counter div:hover {
+.feed__purchase .purchase .counter .plus:hover,
+.feed__purchase .purchase .counter .minus:hover {
     background-color: var(--grey-100);
 }
 .feed__purchase .purchase .counter i {
@@ -402,3 +403,67 @@ label {
 }
 
 /* End feed__purchase */
+
+/* Start feed__service__rating */
+.feed__service__rating {
+    margin-top: 112px;
+}
+
+.feed__service__rating .title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.feed__service__rating .rate-items {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+
+.feed__service__rating .rate-items .items,
+.feed__service__rating .rate-items .stars,
+.feed__service__rating .rate-items .bars {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+}
+
+.rate-items .items .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.feed__service__rating .rate-items .bars .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+.feed__service__rating .rate-items .bars .bar {
+    position: relative;
+    width: 311px;
+    height: 8px;
+    background: var(--grey-200);
+    border-radius: 6px 0px 0px 6px;
+}
+
+.feed__service__rating .rate-items .bars .bar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    background: var(--warning-300);
+    border-radius: 6px 0px 0px 6px;
+    transition: all 0.5s ease;
+}
+/* End feed__service__rating */

@@ -23,6 +23,10 @@
     --linkedin-blue: #2867b2;
 }
 
+.fa-star.empty {
+    color: var(--grey-300);
+}
+
 body.dark-mode {
     background-color: var(--dark-bg);
 }
@@ -92,4 +96,30 @@ body.dark-mode .feed__services .select-item__wrapper label {
 
 body.dark-mode .service__item .details div {
     background-color: var(--grey-800);
+}
+
+body.dark-mode .feed__purchase .purchase .counter span {
+    color: var(--grey-300);
+}
+body.dark-mode .feed__purchase .purchase .total {
+    color: var(--grey-300);
+}
+
+body.dark-mode .feed__purchase .purchase .counter .minus,
+body.dark-mode .feed__purchase .purchase .counter .plus {
+    background-color: var(--grey-800);
+    box-shadow: 0px 2px 3px var(--base-black);
+}
+
+body.dark-mode .feed__purchase .purchase .counter .minus:hover,
+body.dark-mode .feed__purchase .purchase .counter .plus:hover {
+    background-color: var(--grey-600);
+}
+
+body.dark-mode .rate-items .items .item p,
+body.dark-mode .rate-items .items .item span {
+    color: var(--grey-300);
+}
+body.dark-mode .feed__service__rating .rate-items .bars .bar {
+    background-color: var(--grey-300);
 }
