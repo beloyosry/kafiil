@@ -1,7 +1,7 @@
 // components/userProfile/userProfile.js
 
-$(document).ready(function () {
-    $("#toggle").click(function () {
+$(function () {
+    $("#toggle").on("click", function () {
         $("#toggle").toggleClass("dark-mode");
         $("body").toggleClass("dark-mode");
     });

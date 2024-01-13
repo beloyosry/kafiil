@@ -35,22 +35,8 @@
 
 <div class="feed__carousel">
     <div class="carousel">
-        <div class="carousel__items">
-            <div class="carousel__item active">
-                <img src="./assets/images/carousel.png" alt="main-avatar">
-            </div>
-            <div class="carousel__item">
-                <img src="./assets/images/carousel.png" alt="main-avatar">
-            </div>
-            <div class="carousel__item">
-                <img src="./assets/images/carousel.png" alt="main-avatar">
-            </div>
-        </div>
-        <div class="carousel__dots">
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-        </div>
+        <div class="carousel__items"></div>
+        <div class="carousel__dots"></div>
         <div class="carousel__indicators">
             <div class="carousel__prev">
                 <i class="fa-solid fa-chevron-left"></i>
@@ -62,3 +48,44 @@
     </div>
 </div>
 
+<div class="feed__description">
+    <h2>Description</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet, Lorem
+        ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet, Lorem ipsum
+        dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet, Lorem ipsum dolor
+        sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit
+        amet.</p>
+</div>
+
+<div class="feed__services">
+    <header>
+        <h2>Service Add-Ons</h2>
+        <div class="select-all__wrapper">
+            <div class="select select-all ">
+                <i class="fa-solid fa-check"></i>
+                <input type="checkbox" name="select-all" id="select-all">
+            </div>
+            <label for="select-all">Select All</label>
+        </div>
+    </header>
+
+    <div class="service__items">
+    </div>
+</div>
+
+<div class="feed__purchase">
+    <h2>Purchase Service</h2>
+    <div class="purchase">
+        <div class="counter">
+            <div class="minus" id="minus">
+                <i class="fa-solid fa-minus"></i>
+            </div>
+            <span id="counterValue">3</span>
+            <div class="plus" id="plus">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+        </div>
+        <span class="total" id="total"></span>
+        <button>Purchase</button>
+    </div>
+</div>

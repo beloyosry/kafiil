@@ -1,5 +1,26 @@
 /* components\main\feed\feed.css */
 
+/* Global */
+h2 {
+    color: var(--base-black);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0.12px;
+}
+
+p {
+    color: var(--grey-800);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 123%;
+    letter-spacing: 0.08px;
+}
+
+label {
+    cursor: pointer;
+}
+
 /* Start breadcrumb */
 .breadcrumb {
     margin-bottom: 24px;
@@ -79,6 +100,9 @@
 /* Start feed__carousel */
 .feed__carousel {
     margin-top: 45px;
+    padding: 0 23px;
+    max-width: 850px;
+    max-height: 431px;
 }
 
 .feed__carousel .carousel {
@@ -90,27 +114,26 @@
     overflow: hidden;
     display: flex;
     transition: transform 0.5s ease;
+    border-radius: 10px;
 }
 
 .feed__carousel .carousel__items .carousel__item {
     flex: 0 0 100%;
-    max-width: 100%;
-    max-height: 100%;
     transition: transform 0.5s ease;
-
 }
 
 .feed__carousel .carousel__items .carousel__item.active {
-    transform: translateX(0%) ;
+    transform: translateX(0%);
 }
 
 .feed__carousel .carousel__items img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 850px;
+    height: 431px;
+    object-fit: contain;
 }
 .feed__carousel .carousel__dots {
     position: absolute;
-    bottom: 100px;
+    bottom: 30px;
     left: 0;
     right: 0;
     display: flex;
@@ -136,14 +159,13 @@
 .carousel__indicators {
     position: absolute;
     top: 50%;
-    left: 0;
-    right: 0;
-    width: 97%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 105%;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
     margin-top: 15px;
     z-index: 999;
 }
@@ -179,3 +201,204 @@
     color: var(--primary-900);
 }
 /* End feed__carousel */
+
+/* Start feed__description */
+.feed__description {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+}
+
+.feed__description p {
+    text-align: justify;
+    padding: 32px 14px 32px 20px;
+}
+
+/* End feed__description */
+
+/* Start feed__services */
+.feed__services {
+    margin-top: 48px;
+}
+
+.feed__services header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.feed__services .select-all__wrapper,
+.feed__services .select-item__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.feed__services .select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: transparent;
+    text-align: center;
+    border: 1px solid var(--grey-300);
+    transition: all 0.3s ease;
+}
+
+.feed__services .select input {
+    visibility: hidden;
+    width: 0;
+}
+.feed__services .select.checked {
+    background-color: var(--primary-900);
+    border: 1px solid var(--primary-900);
+}
+
+.feed__services .select.checked i {
+    color: var(--base-white);
+}
+
+.feed__services .select-all {
+    width: 20px;
+    height: 20px;
+}
+.feed__services .select-item {
+    width: 30px;
+    height: 30px;
+}
+
+.feed__services .select-all i {
+    font-size: 10px;
+    color: var(--grey-300);
+}
+
+.feed__services .select-all__wrapper label {
+    color: var(--grey-300);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0.09px;
+}
+
+.feed__services .select-item i {
+    color: transparent;
+}
+
+.service__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.service__item {
+    padding: 30px 20px;
+}
+
+.service__item .details {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.service__item .details div {
+    padding: 10px 5px;
+    background: var(--primary-100);
+    border-radius: 8px;
+}
+
+.service__item .details div span {
+    color: var(--primary-900);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 123%;
+    letter-spacing: 0.08px;
+}
+/* End feed__services */
+
+/* Start feed__purchase */
+.feed__purchase {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+}
+
+.feed__purchase .purchase {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 20px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.feed__purchase .purchase .counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+    padding: 10px 110px;
+}
+.feed__purchase .purchase .counter .minus,
+.feed__purchase .purchase .counter .plus {
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 50%;
+    background-color: var(--base-white);
+    box-shadow: 0px 3px 2px var(--grey-300);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.feed__purchase .purchase .counter div:hover {
+    background-color: var(--grey-100);
+}
+.feed__purchase .purchase .counter i {
+    color: var(--primary-900);
+}
+
+.feed__purchase .purchase .counter span {
+    color: var(--base-black);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 123%;
+    letter-spacing: 0.08px;
+}
+.feed__purchase .purchase .total {
+    color: var(--base-black);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 123%;
+    letter-spacing: 0.08px;
+}
+.feed__purchase .purchase button {
+    padding: 15px 65px;
+    border-radius: 8px;
+    background: var(--primary-900);
+    color: var(--base-white);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.feed__purchase .purchase button:hover {
+    opacity: 0.8;
+}
+
+/* End feed__purchase */

@@ -58,6 +58,38 @@ body.dark-mode .profile-menu ul #language {
     color: var(--grey-300);
 }
 
-body.dark-mode .sidebar.active{
+body.dark-mode .sidebar.active {
     background-color: var(--dark-bg);
+}
+
+body.dark-mode .feed__title h1 {
+    color: var(--grey-200);
+}
+
+body.dark-mode .feed h2 {
+    color: var(--grey-200);
+}
+
+body.dark-mode .carousel__indicators div {
+    background-color: var(--grey-500);
+}
+
+body.dark-mode .carousel__indicators div.active {
+    background-color: var(--grey-200);
+}
+body.dark-mode .feed__description p {
+    color: var(--grey-300);
+}
+body.dark-mode .feed__services .select {
+    border-color: var(--grey-600);
+}
+body.dark-mode .feed__services .select-all__wrapper label {
+    color: var(--grey-500);
+}
+body.dark-mode .feed__services .select-item__wrapper label {
+    color: var(--grey-300);
+}
+
+body.dark-mode .service__item .details div {
+    background-color: var(--grey-800);
 }

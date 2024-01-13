@@ -58,13 +58,13 @@ $(function () {
     });
 
     // Toggle userProfile on profile click
-    profile.click(function () {
-        userProfile.slideToggle();
+    profile.on("click", function () {
+        userProfile.slideDown();
         userProfile.toggleClass("opened");
     });
 
     // Toggle sidebar
-    menu.click(function () {
+    menu.on("click", function () {
         sidebar.toggleClass("active");
     });
 });
