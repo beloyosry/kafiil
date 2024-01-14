@@ -11,7 +11,11 @@
     --grey-300: #c3c5c8;
     --grey-400: #8692a6;
     --grey-500: #696f79;
+    --grey-600: #4a4a4a;
+    --grey-700: #4f4f4f;
     --grey-800: #333333;
+    --grey-900: #1e1e1e;
+
     --warning-300: #ffcb31;
     --error-500: #ff5353;
 
@@ -122,4 +126,54 @@ body.dark-mode .rate-items .items .item span {
 }
 body.dark-mode .feed__service__rating .rate-items .bars .bar {
     background-color: var(--grey-300);
+}
+
+body.dark-mode .feed__service__rating .rate-items .bars span {
+    color: var(--grey-400);
+}
+
+body.dark-mode .comments .user__info h3 {
+    color: var(--grey-300) !important;
+}
+
+body.dark-mode .comments .user__comment {
+    color: var(--grey-300) !important;
+}
+
+body.dark-mode .feed__comments .user-comment textarea {
+    background-color: var(--grey-800) !important;
+}
+
+body.dark-mode .suggested__services .title h2 {
+    color: var(--grey-200) !important;
+}
+
+body.dark-mode .card__body.vertical .card__info .card__footer .card__like {
+    background-color: var(--grey-600) !important;
+}
+
+body.dark-mode .card__title h3,
+body.dark-mode .card__user .user p,
+body.dark-mode .card__price p {
+    color: var(--grey-300) !important;
+}
+
+body.dark-mode .side-details__seller,
+body.dark-mode .side-details__info {
+    background: var(--dark-bg);
+    border-bottom: 1px solid var(--grey-800);
+    box-shadow: 0 5px 10px 0px var(--grey-800);
+}
+
+body.dark-mode .side-details .title,
+body.dark-mode .side-details .title h3,
+body.dark-mode .side-details__seller .seller__name h3,
+body.dark-mode .side-details__seller .seller__bio p,
+body.dark-mode .side-details__info .info__items .info__item .left-column p,
+body.dark-mode .side-details__info .info__items .info__item .right-column p {
+    color: var(--grey-300) !important;
+}
+
+body.dark-mode .btn.outline {
+    background-color: var(--grey-800) !important;
 }

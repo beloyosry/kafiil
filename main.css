@@ -6,4 +6,5 @@
 @import "components/main/feed/feed.css";
 @import "components/main/sideDetails/side-details.css";
 @import "components/main/suggested/suggested.css";
+@import "components/card/card.css";
 @import "theme.css";

@@ -1,6 +1,5 @@
 // main.js
 
-
 $(function () {
     // Load navbar, userProfile, and main components
     $("#navbar").load("components/navbar/navbar.html", function () {

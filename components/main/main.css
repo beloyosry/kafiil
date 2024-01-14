@@ -1,17 +1,70 @@
 /* components\main\main.css */
+
+/* Global */
+h2 {
+    color: var(--base-black);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0.12px;
+}
+
+p {
+    color: var(--grey-800);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 123%;
+    letter-spacing: 0.08px;
+}
+
+label {
+    cursor: pointer;
+}
+
+.fa-star {
+    color: var(--warning-300);
+}
+.fa-star.empty {
+    color: var(--grey-200);
+}
+
+.btn {
+    padding: 15px 65px;
+    border-radius: 8px;
+    background: var(--primary-900);
+    color: var(--base-white);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn.outline {
+    background: var(--base-white);
+    color: var(--primary-900);
+    border: 1px solid var(--primary-900);
+}
+
+.btn.outline:hover {
+    background: var(--primary-900);
+    color: var(--base-white);
+}
+
 .content {
     width: 100%;
     display: flex;
     justify-content: stretch;
-    align-items: center;
+    gap: 40px;
 }
 
 .feed {
     /* border: 1px solid black; */
-    width: 70%;
+    width: 80%;
 }
 
 .side-details {
     /* border: 1px solid black; */
-    width: 30%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
