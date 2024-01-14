@@ -526,3 +526,89 @@
     resize: none;
 }
 /* End feed__comments */
+
+/* Small Devices (phones, 576px and up) */
+@media (max-width: 767.98px) {
+    .feed__carousel .carousel__items img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .feed__services .select {
+        padding: 5px !important;
+    }
+
+    .feed__purchase .purchase .counter {
+        padding: 10px !important;
+    }
+    .feed__purchase .purchase .btn {
+        width: 100% !important;
+    }
+
+    .feed__service__rating .rate-items .stars,
+    .feed__service__rating .rate-items .bars {
+        display: none;
+    }
+    .rate-items .items .item {
+        gap: 2px;
+    }
+    .feed__comments .user-comment textarea {
+        width: 250px;
+    }
+}
+
+/* Medium Devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .feed__carousel .carousel__items img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .feed__services .select {
+        padding: 5px !important;
+    }
+
+    .feed__purchase .purchase .counter {
+        padding: 10px !important;
+    }
+    .feed__purchase .purchase .btn {
+        width: 100% !important;
+    }
+
+    .feed__service__rating .rate-items .stars,
+    .feed__service__rating .rate-items .bars {
+        display: none;
+    }
+    .rate-items .items .item {
+        gap: 2px;
+    }
+    .feed__comments .user-comment textarea {
+        width: 250px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1440px) {
+    .feed__carousel .carousel__items img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .feed__services .select {
+        padding: 5px !important;
+    }
+
+    /* .feed__purchase .purchase .counter {
+        padding: 10px !important;
+    }
+    .feed__purchase .purchase .btn {
+        width: 100% !important;
+    } */
+
+    .feed__service__rating .rate-items .stars,
+    .feed__service__rating .rate-items .bars {
+        display: none;
+    }
+    .rate-items .items .item {
+        gap: 2px;
+    }
+    .feed__comments .user-comment textarea {
+        width: 250px;
+    }
+}
